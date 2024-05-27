@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../css/cards.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+    <script src="../js/main.js"></script>
+        <div class="header">
+        <div class="images">
+            <img src="../img/logo_size.jpg">
+
+        </div>
+
+        <div class="search "> Search For a Movie
+            <div class="SearchBar" onclick=Searchbar()>
+                <input id="searchbar" type="text" name="searchbar" placeholder="Movie searcher"><button class="btn" type="submit"><span
+                        class="material-symbols-outlined">search</span></button>
+            </div>
+        </div>
+        <div class="loginpromt">
+            <div class="loginwelcome">Welcome Guest</div>
+            <div class="loginbuttons">
+                <div class="login"> <button onclick="loginprompt" class="loginbtn"> Login</button> </div>
+                <div class="register"> <button onclick="loginprompt" class="loginbtn"> Register</button> </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="content">
+
+        <section class="menu">
+            <div class="Bar_Options">
+                <div class="titlebar"> Browse movies by Genre </div>
+
+                <button class="options" onclick=GenreBut(Romance) >Romance</button>
+                <button class="options" onclick=GenreBut(Action)>Action</button>
+                <button class="options" onclick=GenreBut(Sci-Fi)>Sci-Fi</button>
+                <button class="options" onclick=GenreBut(Fantasy)>Fantasy</button>
+                <button class="options" onclick=GenreBut(Adventure)>Adventure</button>
+
+                <div class="customform">
+                    <div class="custom"> Custom Value </div>
+                    <input type="text" class="custominput" id="custgenre">
+                    <button class="options" onclick=CustGenre()>Specific Filter</button>
+                </div>
+
+            </div>
+
+            <div class="Bar_Options">
+                <div class="titlebar"> Browse movies by Release Date </div>
+
+                <button class="options" onclick=DateBut(2010)>2010</button>
+                <button class="options" onclick=DateBut(2015)>2015</button>
+                <button class="options" onclick=DateBut(2016)>2016</button>
+                <button class="options" onclick=DateBut(2017)>2017</button>
+                <button class="options" onclick=DateBut(2018)>2018</button>
+
+                <div class="customform">
+
+                    <div class="custom"> Custom Value </div>
+                    <input type="text" class="custominput" id="custdate">
+                    <button class="options" onclick=CustDate()>Specific Filter</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="movies">
+            <section class="newrelease">
+                <div class="Cardnewrelease">
+                    <div class="ImgDivnewrelease">
+                        <img src="../img/johncarter.jpg" id="mainimage" >
+                    </div>
+                    <div class="Containernewrelease">
+                        <div class="descriptionnewrelease"> When Civil War veteran John Carter (Taylor Kitsch)
+                            mysteriously awakes on the surface of Mars -- also called Barsoom -- he little expects the
+                            adventure that awaits him. Carter reluctantly becomes embroiled in an epic conflict among
+                            the red planet's inhabitants, including Tars Tarkas (Willem Dafoe) and Princess Dejah Thoris
+                            (Lynn Collins). As Barsoom is poised on the brink of collapse, war-weary Carter rediscovers
+                            his humanity when he realizes that everyone's fate is in his hands.
+                            <div class="cast"> Cast : Taylor Kitsch , Lynn Collins, Samantha Morton, Willem Dafoe
+                                ,Thomas Haden Church, Mark Strong, Ciarán Hinds, Dominic West ,James Purefoy , Bryan
+                                Cranston , Daryl Sabara ,Polly Walker, David Schwimmer ,
+                                Jon Favreau,
+                                Don Stark ,
+                                Nicholas Woodeson ,
+                                Art Malik </div>
+
+                        </div>
+                        <div class="ratings"> 4.5 / 5 <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+
+                        </div>
+
+                        <div class="extraimages">
+                            <div class="imagecontainer">
+                                <div class="imageextracard" id="image1" onclick=ChangeImage(1)> <img src="../img/jc1.jpeg"> </div>
+                                <div class="imageextracard" id="image2" onclick=ChangeImage(2)> <img src="../img/jc2.jpeg"> </div>
+                                <div class="imageextracard" id="image3" onclick=ChangeImage(3)> <img src="../img/jc3.jpeg"> </div>
+                                <div class="imageextracard" id="image4" onclick=ChangeImage(4)> <img src="../img/jc4.jpeg"> </div>
+                                <div class="imageextracard" id="image5" onclick=ChangeImage(5)> <img src="../img/jc5.jpeg"> </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </section>
+
+            <section class="genre">
+                <div class="genretitle"> Genre </div>
+
+                <div class="Card">
+                    <div class="ImgDiv">
+                        <img src="../img/johncarter.jpg">
+                    </div>
+                    <div class="Container">
+                        <div class="title"> John Carter </div>
+                        <div class="features"> 4.5/5 <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="ImgDiv">
+                        <img src="../img/johncarter.jpg">
+                    </div>
+                    <div class="Container">
+                        <div class="title"> John Carter </div>
+                        <div class="features"> 4.5/5 <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="ImgDiv">
+                        <img src="../img/johncarter.jpg">
+                    </div>
+                    <div class="Container">
+                        <div class="title"> John Carter </div>
+                        <div class="features"> 4.5/5 <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="ImgDiv">
+                        <img src="../img/johncarter.jpg">
+                    </div>
+                    <div class="Container">
+                        <div class="title"> John Carter </div>
+                        <div class="features"> 4.5/5 <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="genre"> 
+                <div class="genretitle"> Genre </div>
+
+                <div class="Card">
+                    <div class="ImgDiv">
+                        <img src="../img/johncarter.jpg">
+                    </div>
+                    <div class="Container">
+                        <div class="title"> John Carter </div>
+                        <div class="features"> 4.5/5<br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="ImgDiv">
+                        <img src="../img/johncarter.jpg">
+                    </div>
+                    <div class="Container">
+                        <div class="title"> John Carter </div>
+                        <div class="features"> 4.5/5 <br>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </section>
+
+</body>
+
+<footer>
+    <img src="../img/logo_size_invert.jpg" style="width:200px;height: 200px;">
+    <p>
+        For more information , contact us on 083 228 2198 or use our gmail at u22509578@tuks.co.za
+    </p>
+
+    <p>
+        References used for Website creation : <br>
+        <a href="https://www.w3schools.com/html/"> W3Schools </a> <br>
+
+        Lecture Notes From Cos 216
+    </p>
+</footer>
+
+</html>
