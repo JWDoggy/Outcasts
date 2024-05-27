@@ -1,0 +1,75 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Yeseva One';
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: flex;
+}
+
+.navbar .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(1, 2, 19, 0.278); /* Change the background color as needed */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navbar .button:hover {
+    color: rgb(0, 4, 9);
+     background-color: rgba(0, 4, 9, 0.2); /* Adding a background color on hover */
+            transform: scale(1.1); /* Making the button pop up */
+}
+
+.navbar .button i {
+    font-size: 48px; /* Increased icon size */ 
+}
+
+.navbar .user{
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    transition: color 0.3s;
+  }
+  
+
+.back-button:hover {
+    background-color: #15114269;
+}
